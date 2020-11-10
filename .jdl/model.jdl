@@ -1,0 +1,16 @@
+entity Registry {
+	name String,
+	postalCode String,
+    streetAddress String,
+    neighborhood String,
+    city String,
+    state String
+}
+
+entity Certificate {
+	name String
+}
+
+relationship OneToMany{
+Registry to Certificate{registry},
+}

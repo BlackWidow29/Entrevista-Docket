@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "br.com.docket"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "monolith",
+    "baseName": "interview",
+    "packageName": "br.com.docket",
+    "packageFolder": "br/com/docket",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZjdjY2JhZTYzOGY4NjZkMzk4YzIxZjg0ZmQwZDZjOTczMGE4OGQxNGE3YmNmMThiOTIxNzRlOTY4N2IyNmQzMTE0ZTE5ZTIxMDZmMWExYmE4NDkxN2U5ODJmYzc4OTY1MzQzYjA2MjM4Yzc1NzhmYjJlMWZlYTA1MDg1NmJlNjI=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "creationTimestamp": 1605041991100,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
