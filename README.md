@@ -10,6 +10,11 @@
 * Tela para consulta dos cartórios registrados no sistema - rota: "http://localhost:8080/allregistries"
 
 
+## Tela do sistema
+
+<img alt="" src="https://github.com/BlackWidow29/Entrevista-Docket/blob/main/.github/images/Docket_Tela.png" width="900px" height="auto">
+
+
 # Readme gerado pelo Jhipster
 
 This application was generated using JHipster 6.10.5, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.10.5](https://www.jhipster.tech/documentation-archive/v6.10.5).
