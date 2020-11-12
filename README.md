@@ -1,4 +1,16 @@
-# interview
+# Projeto Entrevista Docket
+
+* Esse projeto foi gerado pelo Jhipster e foi escolhido por ser um grande otimizador de tempo para configurações do projeto
+* Neste projeto foi usado o thymeleaf, spring MVC, spring boot, hibernate, JPA, H2BD
+* Para rodar este projeto basta clonar o projeto e rodar ```./mvnw ``` 
+ 
+## O que foi feito neste projeto:
+
+* Crud para as entidades: Certidão e Cartório
+* Tela para consulta dos cartórios registrados no sistema - rota: "http://localhost:8080/allregistries"
+
+
+# Readme gerado pelo Jhipster
 
 This application was generated using JHipster 6.10.5, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.10.5](https://www.jhipster.tech/documentation-archive/v6.10.5).
 
