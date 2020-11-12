@@ -1,4 +1,166 @@
-header{
-    background-color: #331e3b;
-    color: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 120vh;
+}
+
+.side-bar {
+  background-color: #545789;
+  min-height: 100vh;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon-div {
+  background-color: #eaeae9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+.row{
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+}
+
+.center{
+  justify-content: center;
+}
+
+.select{
+  width: 8px;
+  height: 100%;
+  background-color: #3570b2;
+  margin-right: 20px;
+}
+
+.option-div{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0,0,0,.2);
+  color: #eaeae9;
+  width: 100%;
+  height: 60px;
+  margin-top: 40px;
+}
+
+.option-div img{
+  width: 35px;
+  height: 35px;
+}
+
+.option-div p{
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+}
+
+.icon-docket {
+  width: 85px;
+  height: 85px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.registries-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
+  min-height: 100vh;
+  background-color: #eaeae9;
+}
+
+.header {
+  background-color: #020202;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-family: 'Barlow', sans-serif;
+  width: 100%;
+  height: 60px;
+}
+
+.header p {
+  margin: 5px 10px;
+  color: #eaeae9;
+}
+
+.header img.icon-registry{
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+}
+
+.registry-div {
+  width: 90%;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.registry-div div {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.registry-div div p {
+  font-size: 16px;
+  margin-right: 4px;
+  padding: 2px;
+  font-family: 'Barlow', sans-serif;
+}
+
+.title-div{
+  background-color: #eaeae9;
+  color: #020202;
+  width: 90%;
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  box-shadow: inset 0px 0px 9px 2px rgba(2,2,2,0.42);
+}
+
+.title-div p{
+  font-size: 20px;
+  margin-left: 5px;
+  font-family: 'Barlow', sans-serif;
+}
+.certificates{
+  display: flex;
+  padding: 2px;
+  flex-direction: row;
 }

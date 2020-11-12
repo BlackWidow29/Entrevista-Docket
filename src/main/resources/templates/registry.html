@@ -1,21 +1,73 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org" th:lang="${#locale.language}" lang="en">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="icon" href="${baseUrl}/favicon.ico"/>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Users</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/styles/registry.css">
+    <link th:href="@{/styles/registry.css}" rel="stylesheet"/>
 </head>
 <body>
-<div class="d-flex justify-content-center row align-items-center header">
-<p>Docket</p>
+<div class="header">
+    <img alt="logo cartorio" class="icon-registry" th:src="@{/images/registry-office.svg}"/>
+    <p>Cartórios</p>
 </div>
-<div th:switch="registries">
-    <div th:each="registry : ${registries}">
-        <p th:text="${registry.name}"></p>
+<div class="container">
+    <div class="side-bar">
+        <div class="row center">
+            <div class="icon-div">
+                <img alt="logo docket" class="icon-docket" th:src="@{/images/docket-brasil.svg}"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="option-div">
+                <div class="select"></div>
+                <img th:src="@{/images/clipboard.svg}"/>
+                <p>Listagem de cartórios</p>
+            </div>
+        </div>
+    </div>
+    <div class="registries-div" th:switch="registries">
+        <div class="title-div"><p>Lista de Cartórios</p></div>
+        <div th:each="registry : ${registries}">
+            <div class="registry-div">
+                <div>
+                    <p>Nome: </p>
+                    <p th:text="${registry.name}"></p>
+                </div>
+                <div>
+                    <p>ID: </p>
+                    <p th:text="${registry.id}"></p>
+                </div>
+                <div>
+                    <p>Endereço - </p>
+                    <p>Cidade:</p>
+                    <p th:text="${registry.city}"></p>
+                    <p>|</p>
+                    <p>Bairro:</p>
+                    <p th:text="${registry.neighborhood}"></p>
+                    <p>|</p>
+                    <p>Logradouro:</p>
+                    <p th:text="${registry.streetAddress}"></p>
+                    <p>|</p>
+                    <p>Estado:</p>
+                    <p th:text="${registry.state}"></p>
+                    <p>|</p>
+                    <p>CEP:</p>
+                    <p th:text="${registry.postalCode}"></p>
+                    <p>|</p>
+                </div>
+                <div><p>Certidões: </p></div>
+                <div th:switch="${certificates}">
+                    <div th:each="certificate: ${certificates}">
+                        <span class="certificates" th:if="${certificate.registry.id} == ${registry.id}"><p th:text="${certificate.name}"></p><p>|</p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>
